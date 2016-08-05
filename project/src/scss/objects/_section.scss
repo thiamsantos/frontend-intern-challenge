@@ -1,0 +1,12 @@
+.section {
+  align-items: center;
+  align-content: center;
+  display: flex;
+  &__title {
+    font-size: 3rem;
+    font-family: $roboto-slab;
+    font-weight: 300;
+    margin: 0;
+    text-transform: uppercase;
+  }
+}

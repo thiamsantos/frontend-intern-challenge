@@ -1,0 +1,9 @@
+.footer {
+  flex-flow: row wrap;
+  height: 5rem;
+  justify-content: space-around;
+  &__website {
+    color: $primary-color;
+    font-weight: 700;
+  }
+}

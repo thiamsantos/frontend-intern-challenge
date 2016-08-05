@@ -1,0 +1,29 @@
+//  Global settings
+//  ==========================================================================
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  font-size: 10px;
+  color: #fff;
+}
+
+body {
+  font-family: $roboto;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+html, body, div, span,
+a, form, footer, header,, nav, section, h1, p, button{
+  border: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-size: inherit;
+}

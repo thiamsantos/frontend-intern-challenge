@@ -1,0 +1,23 @@
+  @media #{$bq-tablet} {
+    html {
+      font-size: 11px;
+    }
+    .form {
+      width: 500px;
+      &__input {
+        width: calc(100% - 12rem);
+      }
+      &__close {
+        right: 12rem;
+      }
+    }
+    .link-list__wrapper {
+      width: 50rem;
+      padding: 2rem 4rem;
+    }
+  }
+  @media #{$bq-desktop} {
+    html {
+      font-size: 12px;
+    }
+  }

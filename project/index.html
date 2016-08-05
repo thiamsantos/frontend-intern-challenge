@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Chaordic - Encurte seus links</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#aa1423">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="dist/main.css">
+</head>
+<body>
+  <header class="header">
+    <img src="dist/img/logo-chaordic.png" alt="Chaordic Logo" class="header__logo">
+  </header>
+  <main>
+    <section class="hero section column">
+      <h1 class="hero__title">Encurte seus links.</h1>
+      <p class="hero__content">Links são longos. Encurte os links que você deseja compartilhar, e acompanhe enquanto viajam pela internet.</p>
+      <form class="form">
+        <input type="url" id="url" name="url" class="form__input" placeholder="Cole o seu link aqui">
+        <svg class="form__close hidden" viewBox="0 0 24 24">
+          <path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+        </svg>
+        <button type="submit" title="Encurtar link" class="form__button disabled">Encurtar</button>
+      </form>
+    </section>
+    <section class="link-list section column no-js">
+      <h2 class="link-list__title section__title">Top 5</h2>
+      <ul class="link-list__wrapper">
+        <li class="link-list__content">
+          <a href="" class="link-list__url"></a>
+          <span class="link-list__number"></span>
+        </li>
+        <li class="link-list__content">
+          <a href="" class="link-list__url"></a>
+          <span class="link-list__number"></span>
+        </li>
+        <li class="link-list__content">
+          <a href="" class="link-list__url"></a>
+          <span class="link-list__number"></span>
+        </li>
+        <li class="link-list__content">
+          <a href="" class="link-list__url"></a>
+          <span class="link-list__number"></span>
+        </li>
+        <li class="link-list__content">
+          <a href="" class="link-list__url"></a>
+          <span class="link-list__number"></span>
+        </li>
+      </ul>
+    </section>
+    <section class="hits section column">
+      <h2 class="hits__title section__title">Hits</h2>
+      <p class="hits__count">35.713.571</p>
+      <p class="hits__subtitle">Cliques em links</p>
+    </section>
+  </main>
+  <footer class="footer section">
+    <a href="https://www.chaordic.com.br/" title="Chaordic Website" class="footer__website">chr.dc</a>
+
+    <nav class="social">
+      <a href="https://twitter.com/chaordic" title="Chaordic Twitter" class="social__link social__link--twitter" target="_blank">Twitter</a>
+      <a href="https://www.facebook.com/chaordic.com.br/" title="Chaordic Facebook" class="social__link social__link--facebook" target="_blank">Facebook</a>
+    </nav>
+  </footer>
+
+  <script src="dist/main.js" async defer></script>
+</body>
+</html>

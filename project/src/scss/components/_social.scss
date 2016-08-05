@@ -1,0 +1,16 @@
+.social {
+  &__link {
+    border-radius: 50%;
+    display: inline-block;
+    height: 26px;
+    width: 26px;
+    text-indent: -9999px;
+    &--facebook {
+      background-image: url("img/icon-facebook.png");
+      margin-left: 1rem;
+    }
+    &--twitter {
+      background-image: url("img/icon-twitter.png");
+    }
+  }
+}

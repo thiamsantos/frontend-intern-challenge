@@ -1,0 +1,31 @@
+.form {
+  margin-top: 5vh;
+  flex-direction: row;
+  position: relative;
+  &__button {
+    background-color: $accent-color;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    padding: .5rem 1rem;
+    min-width: 9.5rem;
+  }
+  &__input {
+    background-color: transparent;
+    border: none;
+    border-bottom: .2rem solid $accent-color;
+    padding: .5rem 0;
+    outline: none;
+    &::placeholder {
+      color: $accent-color;
+    }
+  }
+  &__close {
+    cursor: pointer;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    top: .2rem;
+    right: 10rem;
+  }
+}
