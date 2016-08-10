@@ -1,0 +1,27 @@
+.top-links
+	margin-bottom $divider-space
+
+	&__link
+		color $primary-text-color
+		font-weight bold
+
+	&__list
+		padding 0 $divider-space
+		display flex
+		flex-flow row wrap
+
+		+above(600px)
+			padding 0
+			width 60%
+
+	&__item
+		display inline-flex
+		flex-basis 100%
+		justify-content space-between
+		padding 1rem 0
+
+		&:not(:last-child)
+			border-bottom .1rem solid $secondary-color
+
+	&__count
+		color $secondary-text-color

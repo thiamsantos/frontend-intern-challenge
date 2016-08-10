@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Hello</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Chaordic - Encurte seus links</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700" rel="stylesheet">
+	<link href="/css/main.css" rel="stylesheet">
 </head>
 <body>
-	<h1>Hello world</h1>
-	<img src="/img/background-home.jpg" alt="">
+	<header class="header">
+		<img src="/img/logo-chaordic.png" alt="Chaordic logo">
+	</header>
+
+	<main>
+		<section class="hero column">
+			<h1 class="title hero__title hero__item">Encurte seus links.</h1>
+			<p class="hero__item">Links são longos. Encurte os links que você deseja compartilhar, e acompanhe enquanto viajam através da internet.</p>
+			<div class="hero__form">
+				<input class="hero__input" type="url" placeholder="Cole o seu link aqui">
+				<button class="hero__button">Encurtar</button>
+			</div>
+		</section>
+
+		<section class="column top-links">
+			<h2 class="title secondary-title">Top 5</h2>
+			<ul class="top-links__list">
+				<li class="top-links__item">
+					<a class="top-links__link" href="#">https://www.chr.dc/xyz</a>
+					<p class="top-links__count">12234324</p>
+				</li>
+				<li class="top-links__item">
+					<a class="top-links__link" href="#">https://www.chr.dc/xyz</a>
+					<p class="top-links__count">12234324</p>
+				</li>
+				<li class="top-links__item">
+					<a class="top-links__link" href="#">https://www.chr.dc/xyz</a>
+					<p class="top-links__count">12234324</p>
+				</li>
+				<li class="top-links__item">
+					<a class="top-links__link" href="#">https://www.chr.dc/xyz</a>
+					<p class="top-links__count">12234324</p>
+				</li>
+				<li class="top-links__item">
+					<a class="top-links__link" href="#">https://www.chr.dc/xyz</a>
+					<p class="top-links__count">12234324</p>
+				</li>
+				<li class="top-links__item">
+					<a class="top-links__link" href="#">https://www.chr.dc/xyz</a>
+					<p class="top-links__count">12234324</p>
+				</li>
+			</ul>
+		</section>
+
+		<section class="hits column">
+			<h2 class="title secondary-title">hits</h2>
+			<p class="secondary-title hits__total">35.713.571</p>
+			<p class="secondary-text">Cliques em links</p>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<a class="footer__link" href="https://www.chaordic.com.br/">chr.dc</a>
+		<nav class="footer__social">
+			<a class="footer__social__item" href="https://twitter.com/chaordic" target="_blanck" title="Twitter Chaordic">
+				<svg class="footer__icon">
+					<use xlink:href="/img/icons.svg#twitter"/>
+				</svg>
+			</a>
+
+			<a class="footer__social__item" href="https://pt-br.facebook.com/chaordic.com.br" target="_blanck" title="Facebook Chaordic">
+				<svg class="footer__icon">
+					<use xlink:href="/img/icons.svg#facebook"/>
+				</svg>
+			</a>
+		</nav>
+	</footer>
 </body>
 </html>

@@ -1,0 +1,33 @@
+$icon-size = 2.6rem
+
+.footer
+	align-items center
+	color $primary-text-color
+	display flex
+	height $divider-space
+	flex-direction row
+	justify-content space-between
+	padding 0 1rem
+
+	+above(600px)
+		left 50%
+		max-width calc(60% + 10rem)
+		padding 0
+		position relative
+		transform translateX(-50%)
+
+	&__link
+		font-size $secondary-font-size
+		width (2 * $icon-size) + 1rem
+		text-align center
+
+	&__social
+		display inline-flex
+
+		&__item
+			&:not(:last-child)
+				margin-right 1rem
+
+	&__icon
+		height $icon-size
+		width $icon-size

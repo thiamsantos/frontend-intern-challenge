@@ -4,11 +4,23 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "stylus": "stylus -w -u rupture -u autoprefixer-stylus -c src/styl -o dist/css",
+    "imagemin": "imagemin ./src/img/* --out-dir=./dist/img -p optipng mozjpeg",
+    "build:images": "npm run imagemin",
+    "build:css": "npm run stylus"
   },
   "author": "Thiago Santos",
   "license": "ISC",
   "dependencies": {
     "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.9.4",
+    "imagemin-cli": "^3.0.0",
+    "imagemin-mozjpeg": "^6.0.0",
+    "imagemin-optipng": "^5.2.0",
+    "stylus": "^0.54.5"
   }
 }
