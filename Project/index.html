@@ -19,40 +19,18 @@
 		<section class="hero column">
 			<h1 class="title hero__title hero__item">Encurte seus links.</h1>
 			<p class="hero__item">Links são longos. Encurte os links que você deseja compartilhar, e acompanhe enquanto viajam através da internet.</p>
-			<div class="hero__form">
-				<input class="hero__input" type="url" placeholder="Cole o seu link aqui">
-				<button class="hero__button">Encurtar</button>
+			<div class="short-url">
+				<input class="short-url__input" type="url" placeholder="Cole o seu link aqui">
+				<svg class="short-url__close">
+					<use xlink:href="/img/icons.svg#close"/>
+				</svg>
+				<button class="short-url__button" data-clipboard-target=".short-url__input">Encurtar</button>
 			</div>
 		</section>
 
 		<section class="column top-links">
 			<h2 class="title secondary-title">Top 5</h2>
-			<ul class="top-links__list">
-				<li class="top-links__item">
-					<a class="top-links__link" href="#">https://www.chr.dc/xyz</a>
-					<p class="top-links__count">12234324</p>
-				</li>
-				<li class="top-links__item">
-					<a class="top-links__link" href="#">https://www.chr.dc/xyz</a>
-					<p class="top-links__count">12234324</p>
-				</li>
-				<li class="top-links__item">
-					<a class="top-links__link" href="#">https://www.chr.dc/xyz</a>
-					<p class="top-links__count">12234324</p>
-				</li>
-				<li class="top-links__item">
-					<a class="top-links__link" href="#">https://www.chr.dc/xyz</a>
-					<p class="top-links__count">12234324</p>
-				</li>
-				<li class="top-links__item">
-					<a class="top-links__link" href="#">https://www.chr.dc/xyz</a>
-					<p class="top-links__count">12234324</p>
-				</li>
-				<li class="top-links__item">
-					<a class="top-links__link" href="#">https://www.chr.dc/xyz</a>
-					<p class="top-links__count">12234324</p>
-				</li>
-			</ul>
+			<ul class="top-links__list"></ul>
 		</section>
 
 		<section class="hits column">
@@ -63,20 +41,23 @@
 	</main>
 
 	<footer class="footer">
-		<a class="footer__link" href="https://www.chaordic.com.br/">chr.dc</a>
+		<a class="footer__link" href="https://www.chaordic.com.br/" target="_blank">chr.dc</a>
+
 		<nav class="footer__social">
-			<a class="footer__social__item" href="https://twitter.com/chaordic" target="_blanck" title="Twitter Chaordic">
+			<a class="footer__social__item" href="https://twitter.com/chaordic" target="_blank" title="Twitter Chaordic">
 				<svg class="footer__icon">
 					<use xlink:href="/img/icons.svg#twitter"/>
 				</svg>
 			</a>
 
-			<a class="footer__social__item" href="https://pt-br.facebook.com/chaordic.com.br" target="_blanck" title="Facebook Chaordic">
+			<a class="footer__social__item" href="https://pt-br.facebook.com/chaordic.com.br" target="_blank" title="Facebook Chaordic">
 				<svg class="footer__icon">
 					<use xlink:href="/img/icons.svg#facebook"/>
 				</svg>
 			</a>
 		</nav>
 	</footer>
+
+	<script src="/js/main.js" async></script>
 </body>
 </html>

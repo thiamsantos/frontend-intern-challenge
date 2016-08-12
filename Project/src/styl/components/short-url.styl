@@ -1,0 +1,61 @@
+.short-url
+	align-items center
+	display inline-flex
+	flex-wrap wrap
+	justify-content center
+	margin-top 2rem
+	min-width 60%
+	position relative
+
+	&__button
+		background-color $accent-color
+		font-weight bold
+		padding .8rem 0
+		text-transform uppercase
+		width 10rem
+		outline none
+
+		+below(430px)
+			width 100%
+			margin-top .5rem
+
+		&:hover
+			background-color $accent-color-hover
+
+		&.disabled
+			opacity .54
+			pointer-events none
+
+	&__input
+		background-color transparent
+		color $accent-text-color
+		border-bottom .2rem solid $accent-color
+		flex 1
+		font-size $secondary-font-size
+		height $input-height
+		margin-right 0
+		outline none
+
+		+above(430px)
+			margin-right .5rem
+
+		&::placeholder
+			color $accent-text-color
+			font-size $secondary-font-size
+
+		&.js-urlShorted
+			color $default-text-color
+
+	&__close
+		height $btn-close-size
+		width $btn-close-size
+		position absolute
+		right 0
+		top $btn-close-size
+		transform translateY(-50%)
+
+		+above(430px)
+			right 10rem + .5rem
+
+		&.hide
+			display none
